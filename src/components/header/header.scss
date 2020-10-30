@@ -1,0 +1,49 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3.5rem;
+	font-family: "Roboto", sans-serif;
+
+	.header-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.header-link {
+			margin-left: 5rem;
+			font-size: 1.9rem;
+			text-transform: uppercase;
+			color: #151515;
+			position: relative;
+			font-weight: 500;
+			display: inline-block;
+			cursor: pointer;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -0.4rem;
+				height: 3px;
+				width: 103%;
+				background-color: #151515;
+				transform: scaleX(0);
+				transition: transform 250ms ease-in;
+				transform-origin: left;
+			}
+
+			&:hover::after {
+				transform: scaleX(1);
+			}
+
+			&.header-link-signout {
+				color: red;
+
+				&::after {
+					background-color: red;
+				}
+			}
+		}
+	}
+}

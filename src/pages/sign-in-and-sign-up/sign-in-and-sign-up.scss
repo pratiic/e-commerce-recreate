@@ -1,0 +1,29 @@
+$color-grey: #777171;
+
+.sign-in-and-sign-up {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100rem;
+	margin: 3rem auto;
+
+	.title {
+		font-size: 3.3rem;
+		font-weight: 400;
+		text-transform: capitalize;
+		margin-bottom: 0.8rem;
+	}
+
+	.subtitle {
+		margin-bottom: 4rem;
+		color: $color-grey;
+	}
+
+	.title,
+	.subtitle {
+		font-weight: 400;
+	}
+
+	form {
+		width: 35rem;
+	}
+}

@@ -1,0 +1,15 @@
+.collection {
+	.collection-title {
+		font-size: 3.3rem;
+		font-weight: 400;
+		text-align: center;
+		margin: 5rem 0;
+	}
+
+	.collection-items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 3rem;
+		margin-bottom: 7rem;
+	}
+}

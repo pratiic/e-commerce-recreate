@@ -1,0 +1,42 @@
+$color-grey: #777171;
+
+.input-group {
+	position: relative;
+	margin-bottom: 3rem;
+
+	input {
+		width: 100%;
+		border: none;
+		border-bottom: 2px solid $color-grey;
+		outline: none;
+		font-size: 1.8rem;
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		padding: 0.2rem 0.5rem;
+
+		&:focus ~ label {
+			top: -1rem;
+			font-size: 1.4rem;
+			color: black;
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.5rem;
+		font-size: 1.8rem;
+		text-transform: capitalize;
+		color: $color-grey;
+		display: block;
+		padding-bottom: 1rem;
+		transition: top 150ms ease-in;
+
+		&.lift {
+			top: -1rem;
+			font-size: 1.4rem;
+			color: black;
+		}
+	}
+}

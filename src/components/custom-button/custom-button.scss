@@ -1,0 +1,49 @@
+$color-red: #f4504d;
+
+.custom-button {
+	border: 2px solid black;
+	outline: none;
+	background-color: transparent;
+	padding: 0.7rem 2rem;
+	border-radius: 7px;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color 250ms ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+
+	&.google-sign-in {
+		border: 2px solid $color-red;
+		color: $color-red;
+
+		&:hover {
+			background-color: $color-red;
+			color: white;
+		}
+	}
+
+	&.checkout {
+		background-color: black;
+		color: white;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+
+	&.add-to-cart {
+		border: 2px solid white;
+		color: white;
+	}
+}

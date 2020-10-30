@@ -1,0 +1,26 @@
+.cart-item {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+
+	.cart-item-image {
+		width: 8rem;
+		height: 10rem;
+		border-radius: 7px;
+		margin-right: 2.5rem;
+	}
+
+	.cart-item-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		font-size: 1.85rem;
+		font-weight: bold;
+		padding: 1.3rem 0;
+		width: 50%;
+
+		.cart-item-name {
+			margin-bottom: 1.2rem;
+		}
+	}
+}
